@@ -1,0 +1,48 @@
+POST http://localhost:1412/register
+Content-Type: application/json
+
+{
+    "firstname":"Deepak",
+    "lastname":"Kavati",
+    "email":"deepek@gmail.com",
+    "password":"Deepak@123",
+    "primarymail":"deepakskillhub@gmail.com",
+    "type":"user"
+}
+
+
+
+###
+
+POST http://localhost:1412/login
+Content-Type: application/json
+
+{
+    "email":"sunil@gmail.com",
+    "password":"Sunil@123"
+}
+
+###
+
+GET  http://localhost:1412/user
+
+###
+
+GET http://localhost:1412/corporate-institution
+
+###
+
+PUT http://localhost:1412/government-institution/ajay@gmail.com
+Content-Type: application/json
+
+{
+     " password " : "Ajay12@123"
+     
+
+}
+
+
+###
+
+DELETE http://localhost:1412/deleteemployee/ajay@gmail.com
+Content-Type: application/json
